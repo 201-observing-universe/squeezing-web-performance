@@ -36,6 +36,10 @@ module.exports = {
       }
     ]
   },
+  externals: {
+    "aws-sdk": "AWS",
+    "moment": "moment",
+  },
   resolve: {
     extensions: ["*", ".js"]
   },

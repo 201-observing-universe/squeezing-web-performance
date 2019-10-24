@@ -61,6 +61,6 @@ typings/
 .next
 
 # custom
-static/dist
+client/dist
 server.js
 server.js.map

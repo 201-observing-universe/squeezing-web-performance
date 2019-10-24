@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const app = React.createElement("div", null, "hello world2");
+const app = <div>Hello world mafaka</div>
 
 ReactDOM.render(app, document.getElementById("root"));

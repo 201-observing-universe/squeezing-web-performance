@@ -2,25 +2,45 @@ import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import moment from "moment";
 import AWS from "aws-sdk";
+import { container, catImage, imgWrapper } from "./styles";
 
 function doSmthWithAWS() {
+  console.log("\n AWS \n-----------------\n", AWS, "\n");
   AWS.config.region = "eu-west-1";
 }
 
-const list = Array(100)
+const makelist = () => Array(100)
   .fill(null)
-  .map((_, idx) => {
+  .map(() => {
     return (
       <li>
-        <img src={`https://cataas.com/cat/says/${idx}`}></img>
-        <span>{moment().format("MMM Do YY")}</span>
+        <div>
+          <div>
+            and here
+            <div>
+              and here
+              <div css={imgWrapper}>
+                and here
+                <img css={catImage} src={`https://cataas.com/cat/says/${Math.random()}`}></img>
+                <span>{moment().format("MMM Do YY")}</span>
+              </div>
+            </div>
+          </div>
+          here
+        </div>
       </li>
     );
   });
 
 function App(props) {
   useEffect(() => doSmthWithAWS(), []);
-  return <div>{list}</div>;
+  return (
+    <div css={container}>
+      <div>{makelist()}</div>
+      <div>{makelist()}</div>
+      <div>{makelist()}</div>
+    </div>
+  );
 }
 
 ReactDOM.render(<App />, document.getElementById("root"));

@@ -75,6 +75,7 @@ So now you've got the permission to work on this stuff. What the hell you do nex
 0. Before we start, we need to think about what it means to have web performance. It's all about sending less assets. Less js, less images, less html and css. Less doesn't mean less features. Less only means less filesize. 
 1. So have we can send less? Easy. Bundle splitting. First and the most important one. Most efficient way to do it is using Dynamic Imports.
 
+- who is this for
 
 1. Less assets
   - less js

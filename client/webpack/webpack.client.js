@@ -47,6 +47,9 @@ module.exports = {
   resolve: {
     extensions: ["*", ".js"]
   },
+  optimization: {
+    // minimize: false,
+  },
   plugins: [
     // generate index.html for us
     new HtmlWebpackPlugin({

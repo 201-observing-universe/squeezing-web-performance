@@ -76,24 +76,41 @@ So now you've got the permission to work on this stuff. What the hell you do nex
 1. So have we can send less? Easy. Bundle splitting. First and the most important one. Most efficient way to do it is using Dynamic Imports.
 
 
-
+1. Less assets
+  - less js
+    - minification (for free if you use webpack)
+    - bundle splitting
+    - get rid of libraries
+    - tree-shaking
+    - sending heavy computations to server + caching
+    - ua-splitting
+  - less css
+    - split css (for free with emotion)
+    - ua-splitting
+  - less images
+    - just don't send huge images
+  - less everything
+    - use compression, brotli
+2. Less rendering
+  - render lists with windowing technique
+  - 
+3. Proper rendering priorities
+  - 
 
 - what kind of performance I'm talking about
 - rendering performance (fps, interactivity)
 - page load performance (time took before interactive)
-- less js
-  - minification (for free if you use webpack)
-  - bundle splitting
-  - get rid of libraries
-  - tree-shaking
-  - sending heavy computations to server + caching
-  - ua-splitting
-- less css
-  - split css (for free with emotion)
-  - ua-splitting
-- less images
-  - just don't send huge images
 
+
+## talk notes
+
+### less js
+First step to send less js, minify the code. Now if you use webpack it comes out of the box if you set NODE_ENV or mode to production.
+But then, if you include libraries from cdns to improve load performance, then you'd need to make sure to use minified versions of them.
+
+So far pretty obvious, let's move to the less obvious techniques.
+
+And we really don't know how it would perform on different setups and sites when we talking about splitting, so try it out for yourself. 
 
 Live demo
 - 

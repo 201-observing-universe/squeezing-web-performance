@@ -9,7 +9,7 @@ function doSmthWithAWS() {
   AWS.config.region = "eu-west-1";
 }
 
-const makelist = () => Array(100)
+const makelist = () => Array(20)
   .fill(null)
   .map(() => {
     return (

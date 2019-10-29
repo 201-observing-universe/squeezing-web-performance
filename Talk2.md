@@ -28,7 +28,7 @@ Bad performance
 About Money and a bit about user happiness, mostly about money
   (it is natural that when companies have tons of money they think about users hapiness, where performance work might stem from)
 
-The path of performance (swallowing the red pill)
+Performance sentiment
 Fascination of making something beautiful
 (we all have this, we want to make the best website, best part of code, or best performance, that's the strive for perfection, needs to be moderate though, as developers we tend to squeeze everything we want from our perfectionists view. Well, relax and enjoy, because fulfilling your perfectioninsts desires and tendencies is what this presentation is all about)
 Investors had an epiphany an now are pushing performance AS a feature
